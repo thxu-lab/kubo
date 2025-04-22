@@ -19,9 +19,7 @@ services:
       
       # API port, which includes admin operations, so you probably don't want this remotely accessible.
       - 127.0.0.1:5001:5001
-      
-      # HTTP Gateway
-      - 127.0.0.1:8080:8080
+
 volumes:
   ipfs_path:
   ipfs_fuse:
