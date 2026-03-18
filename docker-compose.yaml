@@ -4,7 +4,7 @@ services:
     build: .
     restart: unless-stopped
     volumes:
-      - ipfs_path:/data/ipfs
+      - /home/ubuntu/kubo/data:/data/ipfs
       - ipfs_fuse:/ipfs
       - ipns_fuse:/ipns
     environment:
